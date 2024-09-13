@@ -3,11 +3,24 @@ import ReactDOM from 'react-dom/client';
 
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import FolderStructure from './lld/FolderStructure';
+import data from './lld/FolderStructure/constants/data';
+import Routes from './RouteConstant';
+const router = createBrowserRouter([
+  {
+    path: `/${Routes.FOLDERSTRUCTURE}`,
+    element: <FolderStructure data={data} />,
+  },
+  {
+    path: '/',
+    element: <App />,
+  },
+]);
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <RouterProvider router={router} />
   </React.StrictMode>
 );
 
