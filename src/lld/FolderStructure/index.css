@@ -1,0 +1,31 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.folderContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+.childCOntainter{
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    margin-left: 10px;
+}
+.FolderTitle,.fileTitle{
+    background-color: gray;
+    width: fit-content;
+    padding-inline:10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.actions{
+    display: flex;
+    gap: 20px;
+    margin-left: 50px;
+}
+
