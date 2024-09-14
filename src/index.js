@@ -15,6 +15,7 @@ import data from './lld/FolderStructure/constants/data';
 //constants
 import Routes from './RouteConstant';
 import GridLights from './lld/GridLights';
+import ProgressBar from './lld/ProgressBar';
 const router = createBrowserRouter([
   {
     path: `/${Routes.FOLDERSTRUCTURE}`,
@@ -27,6 +28,10 @@ const router = createBrowserRouter([
   {
     path: `/${Routes.GRID_LIGHTS}`,
     element: <GridLights />,
+  },
+  {
+    path: `/${Routes.PROGRESS_BAR}`,
+    element: <ProgressBar />,
   },
   {
     path: '/',
