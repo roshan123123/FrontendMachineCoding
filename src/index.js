@@ -14,6 +14,7 @@ import data from './lld/FolderStructure/constants/data';
 
 //constants
 import Routes from './RouteConstant';
+import GridLights from './lld/GridLights';
 const router = createBrowserRouter([
   {
     path: `/${Routes.FOLDERSTRUCTURE}`,
@@ -22,6 +23,10 @@ const router = createBrowserRouter([
   {
     path: `/${Routes.SELECTABLE_GRID}`,
     element: <SelectableGrid rows={10} columns={10} />,
+  },
+  {
+    path: `/${Routes.GRID_LIGHTS}`,
+    element: <GridLights />,
   },
   {
     path: '/',

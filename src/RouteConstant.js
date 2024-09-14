@@ -6,6 +6,8 @@ const Routes = {
   LIKE_BUTTON: 'like_button',
   BREADCRUMBS: 'bread_crumbs',
   EMI_CALCULATOR: 'emi_calculator',
+  AUDI_SIGN: 'audi_sign',
+  SCRATCH_CARD: 'scratch_card',
   SCROLL_PERCENTAGE: 'scroll_percentage',
   INFINITE_SCROLL: 'infinite_scroll',
   AUTO_SUGGESTION: 'auto_suggestion',
