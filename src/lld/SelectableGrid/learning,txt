@@ -1,0 +1,15 @@
+1. can add variables in styles and can uses them inside the css files
+
+2. grid-template-columns: repeat(var(--column-count),1fr);repeat one fraction of the available width to column count
+
+3. mouseOver: This event occurs when the mouse pointer is positioned over an element.
+
+4. mouseEnter: This event occurs when the mouse pointer enters an element for the first time.
+
+5. mouseLeave: This event occurs when the mouse pointer leaves an element.
+
+6. user-select: none; this avoids the mouse select blue styles.
+
+mouseenter: Does not bubble up the DOM tree. It only fires when the mouse enters the element directly, not when it enters any child elements.
+
+mouseover: Bubbles up the DOM tree. This means it fires not only when the mouse enters the element itself, but also when it enters any child elements of that element.

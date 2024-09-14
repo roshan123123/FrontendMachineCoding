@@ -4,13 +4,24 @@ import ReactDOM from 'react-dom/client';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+
+//component
 import FolderStructure from './lld/FolderStructure';
+import SelectableGrid from './lld/SelectableGrid';
+
+//helper
 import data from './lld/FolderStructure/constants/data';
+
+//constants
 import Routes from './RouteConstant';
 const router = createBrowserRouter([
   {
     path: `/${Routes.FOLDERSTRUCTURE}`,
     element: <FolderStructure data={data} />,
+  },
+  {
+    path: `/${Routes.SELECTABLE_GRID}`,
+    element: <SelectableGrid rows={10} columns={10} />,
   },
   {
     path: '/',
