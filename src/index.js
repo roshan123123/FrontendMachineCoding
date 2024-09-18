@@ -16,6 +16,7 @@ import data from './lld/FolderStructure/constants/data';
 import Routes from './RouteConstant';
 import GridLights from './lld/GridLights';
 import ProgressBar from './lld/ProgressBar';
+import DragAndDropNotes from './lld/DragAndDropNotes';
 const router = createBrowserRouter([
   {
     path: `/${Routes.FOLDERSTRUCTURE}`,
@@ -32,6 +33,10 @@ const router = createBrowserRouter([
   {
     path: `/${Routes.PROGRESS_BAR}`,
     element: <ProgressBar />,
+  },
+  {
+    path: `/${Routes.DRAG_AND_DROP}`,
+    element: <DragAndDropNotes />,
   },
   {
     path: '/',

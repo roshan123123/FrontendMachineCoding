@@ -1,0 +1,27 @@
+.stickyNotes {
+    background-color: rgb(210, 210, 123);
+    padding: 10px;
+    width: 200px;
+    border-radius: 10px;
+    border:1px solid black;
+    cursor: grab;
+    position: ab;
+}
+
+.input-button {
+    display: flex;
+    gap:10px;
+    margin-bottom: 20px;
+    height:50px;
+
+}
+
+    
+
+.NotesContainer{
+   background-color: red;
+   width: 100%;
+   height: calc(100vh - 100px);
+   
+
+}

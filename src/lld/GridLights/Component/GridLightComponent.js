@@ -40,6 +40,7 @@ const GridLightComponent = ({ matrix }) => {
     <div className="matrix" style={{ '--column-count': matrix[0].length }}>
       {flatArray.map((ele, indx) => (
         <button
+        className='button'
           disabled={!ele || filledElements.includes(indx + 1)}
           style={{
             background: filledElements.includes(indx + 1) ? 'green' : '',
