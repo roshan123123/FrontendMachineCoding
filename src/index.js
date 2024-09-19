@@ -17,6 +17,7 @@ import Routes from './RouteConstant';
 import GridLights from './lld/GridLights';
 import ProgressBar from './lld/ProgressBar';
 import DragAndDropNotes from './lld/DragAndDropNotes';
+import InfiniteScroll from './lld/InfiniteScroll';
 const router = createBrowserRouter([
   {
     path: `/${Routes.FOLDERSTRUCTURE}`,
@@ -38,6 +39,7 @@ const router = createBrowserRouter([
     path: `/${Routes.DRAG_AND_DROP}`,
     element: <DragAndDropNotes />,
   },
+  { path: `/${Routes.INFINITE_SCROLL}`, element: <InfiniteScroll /> },
   {
     path: '/',
     element: <App />,
