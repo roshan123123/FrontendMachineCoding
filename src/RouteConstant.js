@@ -10,7 +10,7 @@ const Routes = {
   SCRATCH_CARD: 'scratch_card',
   SCROLL_PERCENTAGE: 'scroll_percentage',
   INFINITE_SCROLL: 'infinite_scroll',
-  AUTO_SUGGESTION: 'auto_suggestion',
+  TYPE_AHEAD: 'type_ahead',
   PAGINATION: 'pagination',
   TABLE: 'table',
   STEPPER: 'stepper',

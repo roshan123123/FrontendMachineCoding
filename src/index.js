@@ -18,6 +18,7 @@ import GridLights from './lld/GridLights';
 import ProgressBar from './lld/ProgressBar';
 import DragAndDropNotes from './lld/DragAndDropNotes';
 import InfiniteScroll from './lld/InfiniteScroll';
+import TypeAhead from './lld/GoogleTypeAhead/TypeAhead';
 const router = createBrowserRouter([
   {
     path: `/${Routes.FOLDERSTRUCTURE}`,
@@ -40,6 +41,7 @@ const router = createBrowserRouter([
     element: <DragAndDropNotes />,
   },
   { path: `/${Routes.INFINITE_SCROLL}`, element: <InfiniteScroll /> },
+  { path: `/${Routes.TYPE_AHEAD}`, element: <TypeAhead /> },
   {
     path: '/',
     element: <App />,
