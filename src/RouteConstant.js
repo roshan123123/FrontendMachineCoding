@@ -13,6 +13,8 @@ const Routes = {
   TYPE_AHEAD: 'type_ahead',
   PAGINATION: 'pagination',
   TABLE: 'table',
+  STAR_RATING_NUMBER: 'star_rating_number',
+  STAR_RATING_FRACTION: 'star_rating_fraction',
   STEPPER: 'stepper',
   INTERSECTING_CIRCLE: 'intersecting_circle',
   START_TO_END_NUMBER_SPINNER: 'start_to_end_spinner',
