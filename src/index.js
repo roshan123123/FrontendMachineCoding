@@ -19,7 +19,12 @@ import ProgressBar from './lld/ProgressBar';
 import DragAndDropNotes from './lld/DragAndDropNotes';
 import InfiniteScroll from './lld/InfiniteScroll';
 import TypeAhead from './lld/GoogleTypeAhead/TypeAhead';
+import TransferList1 from './lld/TransferList_1';
 const router = createBrowserRouter([
+  {
+    path: `/${Routes.TRANSFER_LIST_1}`,
+    element: <TransferList1 />,
+  },
   {
     path: `/${Routes.FOLDERSTRUCTURE}`,
     element: <FolderStructure data={data} />,

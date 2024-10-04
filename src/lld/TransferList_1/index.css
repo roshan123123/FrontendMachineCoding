@@ -1,0 +1,17 @@
+input{
+    width: 10px;
+}
+.Parent{
+    display: flex;
+    gap: 20px;
+}
+
+.indBox{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.buttonList{
+ display: flex;
+ flex-direction: column;
+}
