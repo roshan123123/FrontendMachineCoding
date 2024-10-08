@@ -15,13 +15,19 @@ import data from './lld/FolderStructure/constants/data';
 //constants
 import Routes from './RouteConstant';
 import GridLights from './lld/GridLights';
-import ProgressBar from './lld/ProgressBar';
+import ProgressBar from './lld/ProgressBarPercentage';
+
 import DragAndDropNotes from './lld/DragAndDropNotes';
 import InfiniteScroll from './lld/InfiniteScroll';
 import TypeAhead from './lld/GoogleTypeAhead/TypeAhead';
 import TransferList1 from './lld/TransferLists';
 import NestedCheckBox from './lld/NestedCheckBox';
+import ProgressBarGfe from './lld/Progress-bar-gfe';
 const router = createBrowserRouter([
+  {
+    path: `/${Routes.PROGRESS_BAR_GFE_CONCURRENT}`,
+    element: <ProgressBarGfe />,
+  },
   {
     path: `/${Routes.NESTED_CHECK_BOX}`,
     element: <NestedCheckBox />,
@@ -44,7 +50,7 @@ const router = createBrowserRouter([
     element: <GridLights />,
   },
   {
-    path: `/${Routes.PROGRESS_BAR}`,
+    path: `/${Routes.PROGRESS_BAR_PERCENTAGE}`,
     element: <ProgressBar />,
   },
   {

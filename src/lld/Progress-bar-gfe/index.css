@@ -1,0 +1,26 @@
+
+.parent_1{
+display: flex;
+flex-direction: column;
+gap: 5px;
+}
+.placeHolder{
+    /* overflow: hidden; */
+    width: 100%;
+    height: 10px;
+    background-color: rgba(241, 240, 240, 0.97);
+    border: 2px solid black;
+}
+
+.progress{
+height: 10px;
+  width: 100%;
+  background-color: green;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 5s linear;
+}
+
+.active_Progress{
+   transform: scaleX(1);
+}
