@@ -27,6 +27,7 @@ const Routes = {
   QUIZ_APP: 'quiz_app',
   CURRENCY_CONVERTER: 'currency_converter',
   TIC_TAC_TOE: 'tic_tac_toe',
-  TRANSFER_LIST_1: "transferList"
+  TRANSFER_LIST_1: 'transferList',
+  NESTED_CHECK_BOX: 'nested_check_box',
 };
 export default Routes;

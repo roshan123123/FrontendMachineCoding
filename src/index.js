@@ -20,7 +20,13 @@ import DragAndDropNotes from './lld/DragAndDropNotes';
 import InfiniteScroll from './lld/InfiniteScroll';
 import TypeAhead from './lld/GoogleTypeAhead/TypeAhead';
 import TransferList1 from './lld/TransferList_1';
+import NestedCheckBox from './lld/NestedCheckBox';
 const router = createBrowserRouter([
+  {
+    path: `/${Routes.NESTED_CHECK_BOX}`,
+    element: <NestedCheckBox />,
+  },
+
   {
     path: `/${Routes.TRANSFER_LIST_1}`,
     element: <TransferList1 />,
