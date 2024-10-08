@@ -19,7 +19,7 @@ import ProgressBar from './lld/ProgressBar';
 import DragAndDropNotes from './lld/DragAndDropNotes';
 import InfiniteScroll from './lld/InfiniteScroll';
 import TypeAhead from './lld/GoogleTypeAhead/TypeAhead';
-import TransferList1 from './lld/TransferList_1';
+import TransferList1 from './lld/TransferLists';
 import NestedCheckBox from './lld/NestedCheckBox';
 const router = createBrowserRouter([
   {

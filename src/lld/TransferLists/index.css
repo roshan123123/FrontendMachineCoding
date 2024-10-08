@@ -1,7 +1,7 @@
 input{
     width: 10px;
 }
-.Parent{
+.Parents{
     display: flex;
     gap: 20px;
 }
@@ -14,4 +14,8 @@ input{
 .buttonList{
  display: flex;
  flex-direction: column;
+}
+
+.inputclass{
+    width: 100px;
 }
