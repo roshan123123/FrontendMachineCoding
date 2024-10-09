@@ -23,7 +23,12 @@ import TypeAhead from './lld/GoogleTypeAhead/TypeAhead';
 import TransferList1 from './lld/TransferLists';
 import NestedCheckBox from './lld/NestedCheckBox';
 import ProgressBarGfe from './lld/Progress-bar-gfe';
+import Stepper from './lld/Stepper';
 const router = createBrowserRouter([
+  {
+    path: `/${Routes.STEPPER}`,
+    element: <Stepper />,
+  },
   {
     path: `/${Routes.PROGRESS_BAR_GFE_CONCURRENT}`,
     element: <ProgressBarGfe />,
@@ -43,7 +48,7 @@ const router = createBrowserRouter([
   },
   {
     path: `/${Routes.SELECTABLE_GRID}`,
-    element: <SelectableGrid rows={10} columns={10} />,
+    element: <SelectableGrid rows={8} columns={6} />,
   },
   {
     path: `/${Routes.GRID_LIGHTS}`,

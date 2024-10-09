@@ -1,19 +1,22 @@
 .grid{
     width: fit-content;
     display: grid;
-    grid-template-columns: repeat(var(--column-count),1fr);
-    
+    grid-template-columns: repeat(var(--columnCount),1fr);
+    gap: 0;
 }
+
+
 .box{
-    cursor: pointer;
     display: flex;
-    width: 50px;
-    height:50px;
-    border: 1px solid black;
     justify-content: center;
     align-items: center;
+    height: 40px;
+    width: 40px;
+    padding: 4px;
+    border: 1px solid black;
     user-select: none;
 }
-.colored-box{
-background-color: rgb(148, 148, 201);
+.colored{
+    background-color: aqua;
+
 }
