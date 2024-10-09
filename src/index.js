@@ -24,7 +24,12 @@ import TransferList1 from './lld/TransferLists';
 import NestedCheckBox from './lld/NestedCheckBox';
 import ProgressBarGfe from './lld/Progress-bar-gfe';
 import Stepper from './lld/Stepper';
+import TimedPractce from './lld/TimedPractice/TimedPractce';
 const router = createBrowserRouter([
+  {
+    path: `/${Routes.TIMED_PRACTICE}`,
+    element: <TimedPractce />,
+  },
   {
     path: `/${Routes.STEPPER}`,
     element: <Stepper />,

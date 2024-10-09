@@ -31,5 +31,6 @@ const Routes = {
   TIC_TAC_TOE: 'tic_tac_toe',
   TRANSFER_LIST_1: 'transferList',
   NESTED_CHECK_BOX: 'nested_check_box',
+  TIMED_PRACTICE: 'timed_practice'
 };
 export default Routes;
