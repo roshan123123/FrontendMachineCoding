@@ -27,25 +27,28 @@ const StepperParent = () => {
 export default StepperParent;
 
 const Stepper = ({ toatlNumberofsteps, currentStep }) => {
+  const width = (100 / (toatlNumberofsteps - 1)) * currentStep;
+  console.log('width', width);
   return (
     <div className="stepperWrapper">
       <div className="steppers">
         {new Array(toatlNumberofsteps).fill(0).map((ele, index) => {
           return (
+            //be vary catious while giving the gaps as `` takes spaces seriously and does not ignores it
             <div
               className={`circles ${
-                index > currentStep && 'incompleteButton '
-              } ${index == currentStep && 'currentButton '} ${
-                index < currentStep && 'completeButton'
+                index > currentStep && ' incompleteButton '
+              }${index == currentStep && ' currentButton '} ${
+                index < currentStep && ' completeButton '
               }`}
             >
               {index}
             </div>
           );
         })}
-        <div className="placeholderLine"></div>
-        <div className="coleoredLine"></div>
       </div>
+      <div className="placeholderLine"></div>
+      <div className="coleoredLine" style={{ width: `${width}%` }}></div>
     </div>
   );
 };

@@ -1,7 +1,7 @@
 .steppers{
     display: flex;
     justify-content: space-between;
-    background-color: red;
+
 }
 
 .circles{
@@ -21,7 +21,7 @@
     background-color: yellow;
 }
 .stepperWrapper{
-    overflow: hidden;
+    /* overflow: hidden; */
      position: relative;
 }
 
@@ -31,11 +31,16 @@
     position: absolute;
     width: 100%;
     background-color: rgb(151, 148, 148);
-    height: 8px;
+    height: 2px;
+    left: 0;
 
 }
 .coleoredLine{
-    width: 100%;
+    width: 25%;
+    top: 50%;
+    position: absolute;
     background-color: rgb(79, 167, 59);
-    height: 8px;
+    height: 4px;
+    transition: all 1s linear;
+    left: 0;
 }
