@@ -1,5 +1,6 @@
 import Routes from './RouteConstant';
 import { Link } from 'react-router-dom';
+import './jsQuestions/main';
 function App() {
   const RoutesArr = [];
   for (const property in Routes) {

@@ -8,15 +8,8 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 //component
 import FolderStructure from './lld/FolderStructure';
 import SelectableGrid from './lld/SelectableGrid';
-
-//helper
-import data from './lld/FolderStructure/constants/data';
-
-//constants
-import Routes from './RouteConstant';
 import GridLights from './lld/GridLights';
 import ProgressBar from './lld/ProgressBarPercentage';
-
 import DragAndDropNotes from './lld/DragAndDropNotes';
 import InfiniteScroll from './lld/InfiniteScroll';
 import TypeAhead from './lld/GoogleTypeAhead/TypeAhead';
@@ -25,7 +18,43 @@ import NestedCheckBox from './lld/NestedCheckBox';
 import ProgressBarGfe from './lld/Progress-bar-gfe';
 import Stepper from './lld/Stepper';
 import TimedPractce from './lld/TimedPractice/TimedPractce';
+import Table from './lld/Table/Table';
+import IndexSignificance from './lld/UnderstandingReact/IndexSignificance';
+import ReactRerenders from './lld/UnderstandingReact/ReactRenders';
+import StopWatch from './lld/stopWatch';
+import DigitalClock from './lld/digitalClock';
+import VirtualisedList from './lld/virtualisedList';
+import AudiSign from './lld/audiSign';
+import UndoableCounter from './lld/undoable_counter/Undoable_Counter';
+import Tabs from './lld/TabsGfe';
+import ScrollPercentageIndicator from './lld/Scroll_Progress_Percentage/ScrollPercentageIndicator';
+
+//constants
+import Routes from './RouteConstant';
+
 const router = createBrowserRouter([
+  {
+    path: `/${Routes.SCROLL_PERCENTAGE}`,
+    element: <ScrollPercentageIndicator />,
+  },
+  { path: `/${Routes.TABS_GFE}`, element: <Tabs /> },
+  { path: `/${Routes.UNDOABLE_COUNTER}`, element: <UndoableCounter /> },
+  { path: `/${Routes.AUDI_SIGN}`, element: <AudiSign /> },
+  { path: `/${Routes.VIRTUALISATION}`, element: <VirtualisedList /> },
+  { path: `/${Routes.DIGITAL_CLOCK}`, element: <DigitalClock /> },
+  { path: `/${Routes.STOP_WATCH}`, element: <StopWatch /> },
+  {
+    path: `/${Routes.REACT_RERENDERS}`,
+    element: <ReactRerenders />,
+  },
+  {
+    path: `/${Routes.KEY_SIGNIFICANCE}`,
+    element: <IndexSignificance />,
+  },
+  {
+    path: `/${Routes.TABLE}`,
+    element: <Table />,
+  },
   {
     path: `/${Routes.TIMED_PRACTICE}`,
     element: <TimedPractce />,
@@ -49,7 +78,7 @@ const router = createBrowserRouter([
   },
   {
     path: `/${Routes.FOLDERSTRUCTURE}`,
-    element: <FolderStructure data={data} />,
+    element: <FolderStructure />,
   },
   {
     path: `/${Routes.SELECTABLE_GRID}`,
@@ -75,6 +104,7 @@ const router = createBrowserRouter([
   },
 ]);
 const root = ReactDOM.createRoot(document.getElementById('root'));
+// commenting react strict to make sure that useEffect are not run multiple times
 root.render(
   <React.StrictMode>
     <RouterProvider router={router} />

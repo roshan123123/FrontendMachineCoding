@@ -1,0 +1,11 @@
+.scroll-ul{
+    width: 400px;
+    height: 600px;
+    background-color: gray;
+    border: 2px solid black;
+    overflow: auto;
+}
+li{
+    height: 50px;
+    border: 1px solid red;
+}

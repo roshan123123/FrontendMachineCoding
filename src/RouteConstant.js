@@ -31,6 +31,13 @@ const Routes = {
   TIC_TAC_TOE: 'tic_tac_toe',
   TRANSFER_LIST_1: 'transferList',
   NESTED_CHECK_BOX: 'nested_check_box',
-  TIMED_PRACTICE: 'timed_practice'
+  TIMED_PRACTICE: 'timed_practice',
+  KEY_SIGNIFICANCE: 'key_significance',
+  REACT_RERENDERS: 'react_rerenders',
+  STOP_WATCH: 'stop_watch',
+  DIGITAL_CLOCK: 'digital_clock',
+  VIRTUALISATION: 'virtualisation',
+  UNDOABLE_COUNTER: 'undoable_counter',
+  TABS_GFE: 'tabs-gfe',
 };
 export default Routes;

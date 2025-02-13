@@ -1,0 +1,11 @@
+.parent{
+ display: flex;
+ gap: 10px;
+}
+
+.EachCell{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: gray;
+}

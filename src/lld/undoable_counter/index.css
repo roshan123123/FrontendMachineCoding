@@ -1,0 +1,13 @@
+.operationsList{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.theader, .trow{
+     display: flex;
+     gap: 10px;
+}
+
+.cell{
+    width: 100px;
+}
